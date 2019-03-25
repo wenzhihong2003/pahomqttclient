@@ -18,14 +18,14 @@ import (
 	"crypto/tls"
 	"flag"
 	"fmt"
-	//"log"
+	// "log"
 	"os"
 	"os/signal"
 	"strconv"
 	"syscall"
 	"time"
 
-	MQTT "github.com/eclipse/paho.mqtt.golang"
+	MQTT "github.com/wenzhihong2003/pahomqttclient"
 )
 
 func onMessageReceived(client MQTT.Client, message MQTT.Message) {
@@ -33,8 +33,8 @@ func onMessageReceived(client MQTT.Client, message MQTT.Message) {
 }
 
 func main() {
-	//MQTT.DEBUG = log.New(os.Stdout, "", 0)
-	//MQTT.ERROR = log.New(os.Stdout, "", 0)
+	// MQTT.DEBUG = log.New(os.Stdout, "", 0)
+	// MQTT.ERROR = log.New(os.Stdout, "", 0)
 	c := make(chan os.Signal, 1)
 	signal.Notify(c, os.Interrupt, syscall.SIGTERM)
 

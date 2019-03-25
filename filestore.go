@@ -20,7 +20,7 @@ import (
 	"path"
 	"sync"
 
-	"github.com/eclipse/paho.mqtt.golang/packets"
+	"github.com/wenzhihong2003/pahomqttclient/packets"
 )
 
 const (

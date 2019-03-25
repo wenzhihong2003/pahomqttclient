@@ -20,17 +20,17 @@ import (
 	"flag"
 	"fmt"
 	"io"
-	//"log"
+	// "log"
 	"os"
 	"strconv"
 	"time"
 
-	MQTT "github.com/eclipse/paho.mqtt.golang"
+	MQTT "github.com/wenzhihong2003/pahomqttclient"
 )
 
 func main() {
-	//MQTT.DEBUG = log.New(os.Stdout, "", 0)
-	//MQTT.ERROR = log.New(os.Stdout, "", 0)
+	// MQTT.DEBUG = log.New(os.Stdout, "", 0)
+	// MQTT.ERROR = log.New(os.Stdout, "", 0)
 	stdin := bufio.NewReader(os.Stdin)
 	hostname, _ := os.Hostname()
 

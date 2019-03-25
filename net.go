@@ -25,7 +25,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/eclipse/paho.mqtt.golang/packets"
+	"github.com/wenzhihong2003/pahomqttclient/packets"
 	"golang.org/x/net/proxy"
 	"golang.org/x/net/websocket"
 )
